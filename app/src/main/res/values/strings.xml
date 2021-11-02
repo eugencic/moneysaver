@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Money Saver</string>
+    <string name="transfer">Transfer</string>
+    <string name="exchange">Exchange</string>
+    <string name="payments">Payments</string>
+    <string name="savings">Savings</string>
+    <string name="percentage">Percentage</string>
+    <string name="cashback">Cashback</string>
+    <string name="transfersave">Transfer</string>
+    <string name="security">Security</string>
+    <string name="more">More</string>
+    <string name="balance">Total balance</string>
+    <string name="lei">7,907 lei</string>
+    <string name="month">This month</string>
+    <string name="maincard">Main card</string>
+</resources>

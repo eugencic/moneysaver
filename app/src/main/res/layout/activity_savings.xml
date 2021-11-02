@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".SavingsActivity">
+
+
+
+
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="41dp"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="10dp"
+    android:text="My savings cards"
+    android:textColor="#fff"
+    android:fontFamily="@font/poppins"
+    android:textSize="22sp"
+    android:textStyle="bold">
+
+
+    </TextView>
+
+    <ImageButton
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="45dp"
+            android:layout_height="41dp"
+            android:background="@drawable/imagebutton_round_corner"
+            android:src="@drawable/ic_add"
+            android:id="@+id/add"
+           >
+
+    </ImageButton>
+
+
+    <ImageButton
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="45dp"
+            android:layout_height="41dp"
+            android:background="@drawable/imagebutton_round_corner"
+            android:src="@drawable/ic_back"
+            android:id="@+id/back"
+            android:onClick="backClicked"
+        app:tint="@drawable/item_selector">
+
+    </ImageButton>
+
+
+
+    <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rowCount="3"
+            app:columnCount="3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:id="@+id/menu3x3">
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="fill"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginRight="15dp">
+
+            <ImageButton
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_transfer"
+                    android:id="@+id/imageButton1"
+                    android:background="@drawable/imagebutton_round_corner"
+            >
+            </ImageButton>
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Transfer to another card"
+                    android:textColor="#8e8e93"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:maxWidth="10dp"
+                    android:fontFamily="@font/poppins">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="fill"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginRight="15dp">
+
+            <ImageButton
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_exchange"
+                    android:id="@+id/imageButton2"
+                    android:background="@drawable/imagebutton_round_corner"
+            android:onClick="percentClicked"
+            >
+            </ImageButton>
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Change percent"
+                    android:textColor="#8e8e93"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:maxWidth="10dp"
+                    android:fontFamily="@font/poppins">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="fill"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+        >
+
+            <ImageButton
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_payments"
+                    android:id="@+id/imageButton3"
+                    android:background="@drawable/imagebutton_round_corner"
+            >
+            </ImageButton>
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Change PIN"
+                    android:textColor="#8e8e93"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:maxWidth="10dp"
+                    android:fontFamily="@font/poppins">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="fill"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginRight="15dp">
+
+            <ImageButton
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_savings"
+                    android:id="@+id/imageButton4"
+                    android:background="@drawable/imagebutton_round_corner"
+
+            >
+            </ImageButton>
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Freeze card"
+                    android:textColor="#8e8e93"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:maxWidth="10dp"
+                    android:fontFamily="@font/poppins">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="fill"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginRight="15dp">
+
+            <ImageButton
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_percent"
+                    android:id="@+id/imageButton5"
+                    android:background="@drawable/imagebutton_round_corner"
+            >
+            </ImageButton>
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Customize"
+                    android:textColor="#8e8e93"
+                    android:maxWidth="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/poppins">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="fill"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+        >
+
+            <ImageButton
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_cashback"
+                    android:id="@+id/imageButton6"
+                    android:background="@drawable/imagebutton_round_corner"
+            >
+            </ImageButton>
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Manage"
+                    android:textColor="#8e8e93"
+                    android:maxWidth="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/poppins">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="fill"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginRight="15dp">
+
+            <ImageButton
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_transfers"
+                    android:id="@+id/imageButton7"
+                    android:background="@drawable/imagebutton_round_corner"
+           android:visibility="invisible"
+            >
+            </ImageButton>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="fill"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginRight="15dp">
+
+            <ImageButton
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_security"
+                    android:id="@+id/imageButton8"
+                    android:background="@drawable/imagebutton_round_corner"
+            >
+            </ImageButton>
+
+            <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Delete card"
+                    android:textColor="#8e8e93"
+                    android:maxWidth="10dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/poppins">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:gravity="fill"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+        >
+
+            <ImageButton
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent"
+                    app:srcCompat="@drawable/ic_more"
+                    android:id="@+id/imageButton9"
+                    android:background="@drawable/imagebutton_round_corner"
+            android:visibility="invisible"
+            >
+            </ImageButton>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+    android:layout_above="@id/menu3x3"
+    android:layout_below="@id/add"
+    android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/saving_card"
+            android:id="@+id/ImageView1">
+
+        </ImageView>
+
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Holiday savings"
+            android:layout_alignStart="@+id/ImageView1"
+            android:layout_alignTop="@+id/ImageView1"
+            android:layout_margin="7dp"
+                  android:textColor="#fff"
+                  android:fontFamily="@font/poppins_semibold"
+                  android:textSize="25sp"
+                  android:id="@+id/card_name">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_name"
+            android:layout_alignStart="@+id/card_name"
+            android:layout_margin="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="1882 8245 9831 0505"
+            android:textColor="#fff"
+            android:textSize="16sp">
+
+        </TextView>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="05 / 25"
+                      android:textColor="#fff"
+                     android:layout_alignStart="@+id/card_number"
+                android:layout_below="@+id/card_number"
+                android:layout_margin="4dp"
+                      android:fontFamily="@font/poppins"
+                      android:textSize="16sp"
+            >
+
+            </TextView>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MDL 230,67"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="25sp"
+                    android:textStyle="normal"
+                    android:layout_alignLeft="@+id/card_name"
+                android:layout_margin="7dp"
+                android:layout_alignBottom="@+id/ImageView1"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
