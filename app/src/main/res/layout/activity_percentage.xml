@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#000"
-        tools:context=".PercentageActivity">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".PercentageActivity">
 
     <TextView android:layout_width="wrap_content"
-              android:layout_height="41dp"
-              android:layout_centerHorizontal="true"
-              android:layout_marginTop="12dp"
-              android:text="Saving Percentage"
-              android:textColor="#fff"
-              android:fontFamily="@font/poppins"
-              android:textSize="22sp"
-              android:textStyle="bold"/>
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Saving Percentage"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppins"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
 
     <ImageButton
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginStart="15dp"
-            android:layout_width="45dp"
-            android:layout_height="41dp"
-            android:background="@drawable/imagebutton_round_corner"
-            android:src="@drawable/ic_back"
-            android:id="@+id/back"
-            android:onClick="backClicked"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:background="@drawable/imagebutton_round_corner"
+        android:src="@drawable/ic_back"
+        android:id="@+id/back"
+        android:onClick="backClicked"
         app:tint="@drawable/item_selector">
 
 
@@ -37,56 +37,123 @@
     </ImageButton>
 
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/back"
         android:orientation="vertical"
         android:layout_margin="10dp">
 
-        <TextView
-            android:id="@+id/text_optim"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="7dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Optimal Offer:\n
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_optim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Optimal Offer:"
+                android:textColor="#fff">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_optim"
+                android:layout_marginStart="7dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="
 15% at more than 1000 transactions\n
 10% at more than 500 transactions\n
 5% at more than 100 transactions\n
-1% at less than 100 transactions\n"
-            android:textColor="#fff">
+1% at less than 100 transactions"
+                android:textColor="#8e8e93">
 
-        </TextView>
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/radio1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/imagebutton_round_corner"
+                android:onClick="radio1Clicked"
+                app:srcCompat="@drawable/ic_checked"
+                app:tint="@drawable/item_selector"></ImageButton>
+
+        </RelativeLayout>
 
 
-        <TextView
-            android:id="@+id/text_stud"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/text_optim"
-            android:layout_marginStart="7dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginEnd="7dp"
-            android:layout_marginBottom="7dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Student offer:\n
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_stud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Student offer:"
+                android:textColor="#fff">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_stud"
+                android:layout_marginStart="7dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="
 5% from every transaction"
-            android:textColor="#fff">
+                android:textColor="#8e8e93">
 
-        </TextView>
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/radio2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/imagebutton_round_corner"
+                app:srcCompat="@drawable/ic_checked"
+                app:tint="@drawable/item_selector"
+                android:onClick="radio2Clicked"></ImageButton>
+
+        </RelativeLayout>
 
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/text_stud">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/manual"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="7dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Choose manually the percentage"
                 android:textColor="#fff">
@@ -95,7 +162,7 @@
 
 
             <com.google.android.material.slider.RangeSlider
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/manual"
                 android:layout_alignEnd="@+id/manual"
@@ -105,52 +172,48 @@
 
             </com.google.android.material.slider.RangeSlider>
 
+            <ImageButton
+                android:id="@+id/radio3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/imagebutton_round_corner"
+                app:srcCompat="@drawable/ic_checked"
+                app:tint="@drawable/item_selector"
+                android:onClick="radio3Clicked"></ImageButton>
+
         </RelativeLayout>
 
 
-        <RadioGroup
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:orientation="vertical">
+            android:layout_marginTop="17dp"
+            android:text="Save"
+            android:background="@drawable/round_corner"
+            android:layout_gravity="center"
+            android:onClick="SaveClicked">
 
-            <RadioButton
-                android:layout_width="28dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/round_corner"
-                android:button="@drawable/ic_checked"
-                android:buttonTint="@drawable/item_selector"
+        </Button>
 
-                >
-
-            </RadioButton>
-
-            <RadioButton
-                android:layout_width="28dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/round_corner"
-                android:button="@drawable/ic_checked"
-                android:buttonTint="@drawable/item_selector">
-
-            </RadioButton>
-
-
-            <RadioButton
-                android:layout_width="28dp"
-                android:layout_height="wrap_content"
-
-                android:background="@drawable/round_corner"
-                android:button="@drawable/ic_checked"
-                android:buttonTint="@drawable/item_selector">
-
-            </RadioButton>
-
-        </RadioGroup>
+    </LinearLayout>
 
 
 
 
-    </RelativeLayout>
+
+
+
+
+
+
+
+
 
 
 

@@ -21,10 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BottomNavigationView bottomNavigationView= findViewById(R.id.bottom_navbar);
-
-        bottomNavigationView.setSelectedItemId(R.id.invisible);
-
         Objects.requireNonNull(getSupportActionBar()).hide();
 
         float balance=0.00f;
