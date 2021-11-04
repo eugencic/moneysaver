@@ -328,14 +328,15 @@
 
 
     <ImageButton
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="15dp"
-            android:layout_width="45dp"
-            android:layout_height="41dp"
-            android:background="@drawable/imagebutton_round_corner"
-            android:src="@drawable/ic_settings">
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/imagebutton_round_corner"
+        android:src="@drawable/ic_settings"
+        android:onClick="settingsClicked">
 
     </ImageButton>
     <ImageButton
@@ -464,19 +465,22 @@
         android:layout_marginStart="10dp">
 
             <ImageView
+                android:id="@+id/main_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/main_card"
-                android:id="@+id/main_card"
 
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-               android:layout_alignTop="@+id/main_card"
                 android:layout_alignStart="@+id/main_card"
-                android:layout_margin="20dp"
+                android:layout_alignTop="@+id/main_card"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:maxWidth="100dp"
                 android:text="Main card"

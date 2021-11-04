@@ -7,6 +7,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Objects;
 
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     public void savingsClicked(View view) {
         Intent intent = new Intent(this, SavingsActivity.class);
         startActivity(intent);
@@ -58,5 +61,11 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE,"0");
         startActivity(intent);
     }
+
+    public void settingsClicked(View view) {
+        Intent intent = new Intent(this, LogoutActivity.class);
+        startActivity(intent);
+    }
+
 
 }
