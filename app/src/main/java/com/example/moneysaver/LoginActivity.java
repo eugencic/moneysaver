@@ -1,8 +1,10 @@
 package com.example.moneysaver;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Menu;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -62,8 +64,6 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
         }
     }
-
-
 
     private void loginUser(){
         String email = etLoginEmail.getText().toString();
