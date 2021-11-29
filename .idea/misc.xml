@@ -3,31 +3,65 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_main.xml" value="0.12234042553191489" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable-v24/item_selector.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_exit.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/round_corner.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/round_corner1.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/toast_red.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_create_card.xml" value="0.18857142857142858" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_login.xml" value="0.12571428571428572" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_logout.xml" value="0.12234042553191489" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_main.xml" value="0.18857142857142858" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_percentage.xml" value="0.18857142857142858" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_register.xml" value="0.18857142857142858" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_savings.xml" value="0.14285714285714285" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_start.xml" value="0.14285714285714285" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/splash_screen.xml" value="0.12234042553191489" />
+        <entry key="..\:/Users/crist/AndroidStudioProjects/MoneySaver/app/src/main/res/menu/item_menu.xml" value="0.1574074074074074" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable-v24/item_selector.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable-v24/round_corner1.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/activity_register.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/button_blue.xml" value="0.21770833333333334" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic__635406724low_poly_colored_pattern.xml" value="0.20364583333333333" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_add.xml" value="0.20364583333333333" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_percent.xml" value="0.1" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable-v24/toast_blue.xml" value="0.32395833333333335" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable-v24/toast_green.xml" value="0.32395833333333335" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/button_blue.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_add.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_back.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_cashback.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_checked.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_down.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_exchange.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_exit.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_history.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_home.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_more.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_notifications.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_payments.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_percent.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_savings.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_security.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_splash.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_splash_screen.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_settings.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_stats.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_support.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_transfer.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_transfers.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/ic_up.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/imagebutton_round_corner.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/imagebutton_round_corner_white.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/user_item.xml" value="0.22135416666666666" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_create_card.xml" value="0.25" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_logout.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_percentage.xml" value="0.2015625" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/item_selector.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/round_corner.xml" value="0.1" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/round_corner1.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/drawable/toast_red.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/font/poppins.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_create_card.xml" value="0.2015625" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_logout.xml" value="0.25" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_percentage.xml" value="0.1" />
         <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_register.xml" value="0.25" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_savings.xml" value="0.19427083333333334" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_start.xml" value="0.25" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/splash_screen.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/user_item.xml" value="0.2015625" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_savings.xml" value="0.2015625" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/activity_start.xml" value="0.1" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/layout/splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/eugen/AndroidStudioProjects/MoneySaver/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.32395833333333335" />
       </map>
     </option>
   </component>

@@ -6,18 +6,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".CreateCardActivity"
-android:background="#000">
+        android:background="#000">
 
-
-    <TextView android:layout_width="wrap_content"
-              android:layout_height="41dp"
-              android:layout_centerHorizontal="true"
-              android:layout_marginTop="12dp"
-              android:text="Create Savings Card"
-              android:textColor="#fff"
-              android:fontFamily="@font/poppins"
-              android:textSize="22sp"
-              android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Create Savings Card"
+        android:textColor="#fff"
+        android:fontFamily="@font/poppins"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
     <ImageButton
         android:id="@+id/back"
@@ -34,88 +34,131 @@ android:background="#000">
 
     </ImageButton>
 
-    <LinearLayout android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:orientation="vertical"
-    android:layout_below="@+id/back"
-    android:layout_margin="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/back"
+        android:layout_margin="15dp">
 
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-        android:text="Saving Card Name"
-        android:fontFamily="@font/poppins_semibold"
-        android:textColor="#fff"
-        android:layout_gravity="center">
-
-        </TextView>
-
-
-        <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:ems="10"
-                android:id="@+id/editTextTextCardName"
-                android:background="@drawable/round_corner"
-                android:textColor="#fff"
-
-        />
-
-
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="Credit Card Number"
-                  android:fontFamily="@font/poppins_semibold"
-                  android:textColor="#fff"
-                  android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Savings Card Name"
+            android:textColor="#fff">
 
         </TextView>
 
-
         <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/editTextTextCardNumber"
-                android:background="@drawable/round_corner"
-                android:textColor="#fff"
-        />
+            android:id="@+id/editTextTextCardName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textAlignment="center" />
 
-
-        <TextView android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="Expire Date"
-                  android:fontFamily="@font/poppins_semibold"
-                  android:textColor="#fff"
-                  android:layout_gravity="center"
-                  android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Credit Card Number"
+            android:textColor="#fff">
 
         </TextView>
 
-
         <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="date"
-                android:ems="10"
-                android:id="@+id/editTextTextCardDate"
-                android:background="@drawable/round_corner"
-                android:textColor="#fff"
-        />
-        <Button
-                android:layout_marginTop="17dp"
-                android:text="Link Card"
+            android:id="@+id/editTextTextCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#fff"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:gravity="center"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button"
-        android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Exp Month"
+                android:textColor="#fff">
 
-        />
+            </TextView>
 
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Exp Year"
+                android:textColor="#fff">
+
+            </TextView>
+
+        </LinearLayout>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <EditText
+            android:layout_margin="7dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/editTextTextCardDate"
+            android:background="@drawable/round_corner"
+            android:textColor="#fff"
+            android:textAlignment="center" />
+
+    <EditText
+        android:layout_marginTop="1dp"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextTextCardYear"
+        android:background="@drawable/round_corner"
+        android:textColor="#fff"
+        android:textAlignment="center" />
+
+</LinearLayout>
+
+        <Button
+            android:id="@+id/buttonLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:text="Link Card" />
 
     </LinearLayout>
-
-
 
 </RelativeLayout>

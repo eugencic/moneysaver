@@ -14,33 +14,33 @@ tools:context=".RegisterActivity"
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
-        android:layout_height="152dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
         android:src="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="5dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="16dp"
+            android:layout_height="59dp"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/poppins"
             android:gravity="center_horizontal"
             android:text="Sign Up"
             android:textColor="#1a88e7"
             android:textSize="30sp"
             android:textStyle="bold" />
 
-
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etRegEmail"
@@ -52,12 +52,11 @@ tools:context=".RegisterActivity"
                 android:textColor="#000" />
         </com.google.android.material.textfield.TextInputLayout>
 
-
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp">
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corner">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etRegPass"
@@ -69,12 +68,70 @@ tools:context=".RegisterActivity"
                 android:textColor="#000" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corner">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRegCardNr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/imagebutton_round_corner_white"
+                android:hint="Card Number"
+                android:inputType="numberDecimal"
+                android:textColor="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegCardDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imagebutton_round_corner_white"
+                    android:hint="Exp Month"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etRegCardYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/imagebutton_round_corner_white"
+                    android:hint="Exp Year"
+                    android:inputType="numberDecimal"
+                    android:textColor="#000" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Create Account" />
+            android:layout_marginTop="10dp"
+            android:text="Create Account"
+            android:background="@drawable/round_corner"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -88,7 +145,8 @@ tools:context=".RegisterActivity"
                 android:layout_height="wrap_content"
                 android:text="Already registered?"
                 android:textColor="#fff"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"/>
 
             <TextView
                 android:id="@+id/tvLoginHere"
@@ -96,6 +154,7 @@ tools:context=".RegisterActivity"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:text="Login here"
+                android:fontFamily="@font/poppins"
                 android:textColor="#1a88e7"
                 android:textSize="20sp"
                 android:textStyle="bold" />

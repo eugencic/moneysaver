@@ -9,323 +9,313 @@
         tools:context=".MainActivity"
         android:background="#000">
 
-
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-    android:layout_alignParentBottom="true"
-    android:layout_margin="2dp"
-    android:elevation="2dp"
-    app:menu="@menu/item_menu"
-    android:background="@drawable/round_corner"
-    app:itemRippleColor="@android:color/transparent"
-    app:labelVisibilityMode="unlabeled"
-    app:itemIconSize="25dp"
-    app:itemIconTint="@drawable/item_selector"
-    android:id="@+id/bottom_navbar"/>
-
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="2dp"
+        android:elevation="2dp"
+        app:menu="@menu/item_menu"
+        android:background="@drawable/round_corner"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="25dp"
+        app:itemIconTint="@drawable/item_selector"
+        android:id="@+id/bottom_navbar"/>
 
     <androidx.gridlayout.widget.GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:rowCount="3"
-            app:columnCount="3"
-            android:layout_above="@+id/bottom_navbar"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-
-            android:id="@+id/menu3x3">
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rowCount="3"
+        app:columnCount="3"
+        android:layout_above="@+id/bottom_navbar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/menu3x3">
 
         <LinearLayout
             android:orientation="vertical"
-        android:gravity="fill"
-        app:layout_columnWeight="1"
-        app:layout_rowWeight="1"
-         android:layout_marginEnd="15dp">
+            android:gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_marginEnd="15dp">
 
         <ImageButton
-               android:layout_height="40dp"
-               android:layout_width="match_parent"
-                app:srcCompat="@drawable/ic_transfer"
-                android:id="@+id/imageButton1"
-        android:background="@drawable/imagebutton_round_corner"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/ic_transfer"
+            android:id="@+id/imageButton1"
+            android:background="@drawable/imagebutton_round_corner"
             app:tint="@drawable/item_selector">
         </ImageButton>
 
             <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:text="@string/transfer"
-                    android:textColor="#8e8e93"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="4dp"
-                    android:maxWidth="10dp"
-                    android:fontFamily="@font/poppins">
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/transfer"
+                android:textColor="#8e8e93"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:maxWidth="10dp"
+                android:fontFamily="@font/poppins">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
-                android:orientation="vertical"
-                android:gravity="fill"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-               android:layout_marginRight="15dp">
+            android:orientation="vertical"
+            android:gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_marginRight="15dp">
 
             <ImageButton
-                    android:layout_height="40dp"
-                    android:layout_width="match_parent"
-                    app:srcCompat="@drawable/ic_exchange"
-                    android:id="@+id/imageButton2"
-                    android:background="@drawable/imagebutton_round_corner"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/ic_exchange"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/imagebutton_round_corner"
                 app:tint="@drawable/item_selector">
             </ImageButton>
 
             <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:text="@string/exchange"
-                    android:textColor="#8e8e93"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="4dp"
-                    android:maxWidth="10dp"
-                    android:fontFamily="@font/poppins">
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/exchange"
+                android:textColor="#8e8e93"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:maxWidth="10dp"
+                android:fontFamily="@font/poppins">
 
             </TextView>
 
         </LinearLayout>
 
-
         <LinearLayout
-                android:orientation="vertical"
-                android:gravity="fill"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-                >
+            android:orientation="vertical"
+            android:gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            >
 
             <ImageButton
-                    android:layout_height="40dp"
-                    android:layout_width="match_parent"
-                    app:srcCompat="@drawable/ic_payments"
-                    android:id="@+id/imageButton3"
-                    android:background="@drawable/imagebutton_round_corner"
-            android:onClick="createClicked"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/ic_payments"
+                android:id="@+id/imageButton3"
+                android:background="@drawable/imagebutton_round_corner"
+                android:onClick="createClicked"
                 app:tint="@drawable/item_selector">
             </ImageButton>
 
             <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:text="Create"
-                    android:textColor="#8e8e93"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="4dp"
-                    android:maxWidth="10dp"
-                    android:fontFamily="@font/poppins">
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="Create"
+                android:textColor="#8e8e93"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:maxWidth="10dp"
+                android:fontFamily="@font/poppins">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
-                android:orientation="vertical"
-                android:gravity="fill"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-                android:layout_marginRight="15dp">
+            android:orientation="vertical"
+            android:gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_marginRight="15dp">
 
             <ImageButton
-                    android:layout_height="40dp"
-                    android:layout_width="match_parent"
-                    app:srcCompat="@drawable/ic_savings"
-                    android:id="@+id/imageButton4"
-                    android:background="@drawable/imagebutton_round_corner"
-                  android:onClick="savingsClicked"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/ic_savings"
+                android:id="@+id/imageButton4"
+                android:background="@drawable/imagebutton_round_corner"
+                android:onClick="savingsClicked"
                 app:tint="@drawable/item_selector">
             </ImageButton>
 
             <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:text="@string/savings"
-                    android:textColor="#8e8e93"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="4dp"
-                    android:maxWidth="10dp"
-                    android:fontFamily="@font/poppins">
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/savings"
+                android:textColor="#8e8e93"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:maxWidth="10dp"
+                android:fontFamily="@font/poppins">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
-                android:orientation="vertical"
-                android:gravity="fill"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-                android:layout_marginRight="15dp">
+            android:orientation="vertical"
+            android:gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_marginRight="15dp">
 
             <ImageButton
-                    android:layout_height="40dp"
-                    android:layout_width="match_parent"
-                    app:srcCompat="@drawable/ic_percent"
-                    android:id="@+id/imageButton5"
-                    android:background="@drawable/imagebutton_round_corner"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/ic_percent"
+                android:id="@+id/imageButton5"
+                android:background="@drawable/imagebutton_round_corner"
                 android:onClick="percentageClicked"
                 app:tint="@drawable/item_selector">
             </ImageButton>
 
             <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:text="@string/percentage"
-                    android:textColor="#8e8e93"
-                    android:maxWidth="10dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="4dp"
-                    android:fontFamily="@font/poppins">
-
-            </TextView>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-                android:orientation="vertical"
-                android:gravity="fill"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-               >
-
-            <ImageButton
-                    android:layout_height="40dp"
-                    android:layout_width="match_parent"
-                    app:srcCompat="@drawable/ic_cashback"
-                    android:id="@+id/imageButton6"
-                    android:background="@drawable/imagebutton_round_corner"
-                app:tint="@drawable/item_selector">
-            </ImageButton>
-
-            <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:text="Achievements"
-                    android:textColor="#8e8e93"
-                    android:maxWidth="10dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="4dp"
-                    android:fontFamily="@font/poppins">
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/percentage"
+                android:textColor="#8e8e93"
+                android:maxWidth="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
-                android:orientation="vertical"
-                android:gravity="fill"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-                android:layout_marginRight="15dp">
+            android:orientation="vertical"
+            android:gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            >
 
             <ImageButton
-                    android:layout_height="40dp"
-                    android:layout_width="match_parent"
-                    app:srcCompat="@drawable/ic_transfers"
-                    android:id="@+id/imageButton7"
-                    android:background="@drawable/imagebutton_round_corner"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/ic_cashback"
+                android:id="@+id/imageButton6"
+                android:background="@drawable/imagebutton_round_corner"
                 app:tint="@drawable/item_selector">
             </ImageButton>
 
             <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:text="@string/transfersave"
-                    android:textColor="#8e8e93"
-                    android:maxWidth="10dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="4dp"
-                    android:fontFamily="@font/poppins">
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="Achievements"
+                android:textColor="#8e8e93"
+                android:maxWidth="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins">
 
             </TextView>
 
         </LinearLayout>
 
         <LinearLayout
-                android:orientation="vertical"
-                android:gravity="fill"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-               android:layout_marginRight="15dp">
+            android:orientation="vertical"
+            android:gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_marginRight="15dp">
 
             <ImageButton
-                    android:layout_height="40dp"
-                    android:layout_width="match_parent"
-                    app:srcCompat="@drawable/ic_security"
-                    android:id="@+id/imageButton8"
-                    android:background="@drawable/imagebutton_round_corner"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/ic_transfers"
+                android:id="@+id/imageButton7"
+                android:background="@drawable/imagebutton_round_corner"
                 app:tint="@drawable/item_selector">
             </ImageButton>
 
             <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:text="@string/security"
-                    android:textColor="#8e8e93"
-                    android:maxWidth="10dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="4dp"
-                    android:fontFamily="@font/poppins">
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/transfersave"
+                android:textColor="#8e8e93"
+                android:maxWidth="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins">
 
             </TextView>
 
         </LinearLayout>
-
 
         <LinearLayout
-                android:orientation="vertical"
-                android:gravity="fill"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-              >
+            android:orientation="vertical"
+            android:gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_marginRight="15dp">
 
             <ImageButton
-                    android:layout_height="40dp"
-                    android:layout_width="match_parent"
-                    app:srcCompat="@drawable/ic_more"
-                    android:id="@+id/imageButton9"
-                    android:background="@drawable/imagebutton_round_corner"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/ic_security"
+                android:id="@+id/imageButton8"
+                android:background="@drawable/imagebutton_round_corner"
                 app:tint="@drawable/item_selector">
             </ImageButton>
 
             <TextView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:text="@string/more"
-                    android:textColor="#8e8e93"
-                    android:maxWidth="10dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="4dp"
-                    android:fontFamily="@font/poppins">
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/security"
+                android:textColor="#8e8e93"
+                android:maxWidth="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins">
 
             </TextView>
 
         </LinearLayout>
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="fill"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            >
+
+            <ImageButton
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                app:srcCompat="@drawable/ic_more"
+                android:id="@+id/imageButton9"
+                android:background="@drawable/imagebutton_round_corner"
+                app:tint="@drawable/item_selector">
+            </ImageButton>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/more"
+                android:textColor="#8e8e93"
+                android:maxWidth="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/poppins">
+
+            </TextView>
+
+        </LinearLayout>
 
     </androidx.gridlayout.widget.GridLayout>
-
 
     <ImageButton
         android:layout_width="45dp"
@@ -335,8 +325,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/imagebutton_round_corner"
-        android:src="@drawable/ic_settings"
-        android:onClick="settingsClicked">
+        android:onClick="settingsClicked"
+        android:src="@drawable/ic_exit">
 
     </ImageButton>
 
@@ -363,7 +353,6 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp">
 
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -378,17 +367,13 @@
                 android:textColor="#8e8e93" />
 
             <TextView
-                android:id="@+id/balance"
+                android:id="@+id/balanc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
-                android:text="@string/lei"
                 android:textColor="#fff"
                 android:textSize="27sp"
-                android:textStyle="normal"
-
-                />
-
+                android:textStyle="normal" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -398,7 +383,6 @@
                 android:text="@string/month"
                 android:textColor="#8e8e93" />
 
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -406,12 +390,9 @@
                 android:orientation="horizontal">
 
                 <ImageView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_up"
-
-                    />
+                    android:src="@drawable/ic_up" />
 
                 <TextView
                     android:id="@+id/bal"
@@ -419,10 +400,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="@string/lei"
                     android:textColor="#fff"
                     android:textSize="20sp" />
-
 
             </LinearLayout>
 
@@ -443,13 +422,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="3,710 lei"
                     android:textColor="#fff"
                     android:textSize="20sp" />
 
-
             </LinearLayout>
-
 
         </LinearLayout>
 
@@ -481,11 +457,8 @@
 
             </TextView>
 
-
         </FrameLayout>
 
-
     </LinearLayout>
-
 
 </RelativeLayout>

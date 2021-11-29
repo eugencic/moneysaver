@@ -7,13 +7,11 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Objects;
 
 public class LogoutActivity extends AppCompatActivity {
-
-    Button btnLogOut;
+    Button btnLogOut, btnBack;
     FirebaseAuth mAuth;
 
     @Override
@@ -23,12 +21,14 @@ public class LogoutActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
 
         btnLogOut = findViewById(R.id.btnLogout);
+        btnBack = findViewById(R.id.btnBack);
         mAuth = FirebaseAuth.getInstance();
 
-        btnLogOut.setOnClickListener(view ->{
+        btnLogOut.setOnClickListener(view -> {
             mAuth.signOut();
             startActivity(new Intent(LogoutActivity.this, LoginActivity.class));
         });
 
+        btnBack.setOnClickListener(view -> onBackPressed());
     }
 }

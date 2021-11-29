@@ -3,29 +3,42 @@ package com.example.moneysaver;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.os.Handler;
-import android.view.Menu;
 
-
-
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class SplashActivity extends Activity {
-
-    private final int SPLASH_DISPLAY_LENGTH = 1000;
-
+    FirebaseAuth mAuth;
+    FirebaseUser currentUser;
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
 
-        new Handler().postDelayed(new Runnable(){
+        mAuth = FirebaseAuth.getInstance();
+
+        if (mAuth != null) {
+            currentUser = mAuth.getCurrentUser();
+        }
+
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent mainIntent = new Intent(SplashActivity.this, LoginActivity.class);
-                SplashActivity.this.startActivity(mainIntent);
-                SplashActivity.this.finish();
+                FirebaseUser user = mAuth.getCurrentUser();
+                if (user == null) {
+                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                    SplashActivity.this.startActivity(intent);
+                    SplashActivity.this.finish();
+                } else {
+                    Intent mainIntent = new Intent(SplashActivity.this, MainActivity.class);
+                    mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    SplashActivity.this.startActivity(mainIntent);
+                    SplashActivity.this.finish();
+                }
             }
-        }, SPLASH_DISPLAY_LENGTH);
+        }, 1500);
     }
 }
