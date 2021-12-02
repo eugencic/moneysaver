@@ -17,14 +17,16 @@ import android.widget.Toast;
 
 import java.util.Objects;
 
-public class MainActivity extends AppCompatActivity {
+interface EventListener {
+    void updateData();
+    void toastNotEnough();
+    void toastDataFail();
+}
 
-    @SuppressLint("StaticFieldLeak")
-    static TextView balanceView;
-    @SuppressLint("StaticFieldLeak")
-    static TextView balanceView1;
-    @SuppressLint("StaticFieldLeak")
-    static TextView paysView;
+public class MainActivity extends AppCompatActivity implements EventListener {
+    private TextView balanceView;
+    private TextView balanceView1;
+    private TextView paysView;
 
     ImageButton im4;
     ImageButton im5;
@@ -38,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).hide();
 
         balanceManager = new BalanceManager();
+        EventListener mListener = this;
+        balanceManager.setEventListener(mListener);
 
         balanceView = findViewById(R.id.balanc);
         balanceView1 = findViewById(R.id.bal);
@@ -46,10 +50,30 @@ public class MainActivity extends AppCompatActivity {
         im4 = findViewById(R.id.imageButton4);
         im5 = findViewById(R.id.imageButton5);
 
-        balanceManager.context = this;
         balanceManager.getSavCardData();
         balanceManager.getData();
+    }
 
+    @SuppressLint({"DefaultLocale", "SetTextI18n"})
+    @Override
+    public void updateData() {
+        balanceView.setText(String.format("%.2f", balanceManager.user.balance) + " MDL");
+        balanceView1.setText(String.format("%.2f", balanceManager.user.benefits) + " MDL");
+        paysView.setText(String.format("%.2f", balanceManager.user.pays) + " MDL");
+    }
+
+    @Override
+    public void toastNotEnough() {
+        Toast toast = Toast.makeText(this, "Not enough funds to save money from the last transaction", Toast.LENGTH_LONG);
+        toast.getView().setBackgroundResource(R.drawable.toast_red);
+        toast.show();
+    }
+
+    @Override
+    public void toastDataFail() {
+        Toast toast = Toast.makeText(this, "Failed to get data", Toast.LENGTH_LONG);
+        toast.getView().setBackgroundResource(R.drawable.toast_red);
+        toast.show();
     }
 
     public void savingsClicked(View view) {
