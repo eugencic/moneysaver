@@ -62,7 +62,7 @@ public class BalanceManager {
                 }
                 myRef.child("Users").child(currentUser.getUid()).setValue(user);
 
-                mListener.updateData();
+                mListener.updateData(user.balance, user.benefits, user.pays);
             }
 
             @Override

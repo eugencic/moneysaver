@@ -18,7 +18,7 @@ import android.widget.Toast;
 import java.util.Objects;
 
 interface EventListener {
-    void updateData();
+    void updateData(float balance, float benefits, float pays);
     void toastNotEnough();
     void toastDataFail();
 }
@@ -56,10 +56,10 @@ public class MainActivity extends AppCompatActivity implements EventListener {
 
     @SuppressLint({"DefaultLocale", "SetTextI18n"})
     @Override
-    public void updateData() {
-        balanceView.setText(String.format("%.2f", balanceManager.user.balance) + " MDL");
-        balanceView1.setText(String.format("%.2f", balanceManager.user.benefits) + " MDL");
-        paysView.setText(String.format("%.2f", balanceManager.user.pays) + " MDL");
+    public void updateData(float balance, float benefits, float pays) {
+        balanceView.setText(String.format("%.2f", balance) + " MDL");
+        balanceView1.setText(String.format("%.2f", benefits) + " MDL");
+        paysView.setText(String.format("%.2f", pays) + " MDL");
     }
 
     @Override
